@@ -1,0 +1,33 @@
+.alltable {
+    border: 2px solid rgb(82, 79, 79);
+  margin-left: 90px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+.entriesPerpage {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+ 
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
