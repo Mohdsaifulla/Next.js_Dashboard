@@ -1,6 +1,6 @@
-'use client'
+"use client";
 import React, { useState } from "react";
-import styles from "../styles/table.module.css"
+import styles from "../styles/table.module.css";
 const Table = () => {
   const [entriesPerPage, setEntriesPerPage] = useState(10);
   const [searchQuery, setSearchQuery] = useState("");
@@ -31,7 +31,6 @@ const Table = () => {
     { name: "Daniel Thompson", age: 27, location: "Moscow" },
   ];
 
-  
   const filteredData = data.filter((entry) =>
     Object.values(entry).some((value) =>
       value.toString().toLowerCase().includes(searchQuery.toLowerCase())
@@ -42,7 +41,6 @@ const Table = () => {
     setEntriesPerPage(parseInt(e.target.value));
   };
 
- 
   const handleSearchInputChange = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -90,3 +88,4 @@ const Table = () => {
 };
 
 export default Table;
+//
