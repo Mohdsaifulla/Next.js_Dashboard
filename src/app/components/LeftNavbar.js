@@ -7,7 +7,9 @@ import { useState } from "react";
 import {
   faBookOpen,
   faLongArrowLeft,
+  faPager,
   faSignOutAlt,
+  faTable,
   faTachometerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 function LeftNavbar() {
@@ -76,7 +78,7 @@ function LeftNavbar() {
               </li>
               <li className={styles.dropdown2}>
                 <FontAwesomeIcon
-                  icon={faTachometerAlt}
+                  icon={faPager}
                   style={{ width: "18px", cursor: "pointer" }}
                   // onClick={togglePageDropdown}
                 />
@@ -131,18 +133,11 @@ function LeftNavbar() {
               </li>
               <li>
                 <FontAwesomeIcon
-                  icon={faTachometerAlt}
+                  icon={faTable}
                   style={{ width: "18px", cursor: "pointer" }}
                 />
                 <a href="/table">Table</a>
               </li>
-              {/* <li>
-                <FontAwesomeIcon
-                  icon={faTachometerAlt}
-                  style={{ width: "18px", cursor: "pointer" }}
-                />
-                <a href="#">setting</a>
-              </li> */}
               <li>
                 <FontAwesomeIcon
                   icon={faSignOutAlt}

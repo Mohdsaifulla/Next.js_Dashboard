@@ -5,7 +5,6 @@ const Table = () => {
   const [entriesPerPage, setEntriesPerPage] = useState(10);
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Mock data for the table
   const data = [
     { name: "John Doe", age: 25, location: "New York" },
     { name: "Jane Smith", age: 32, location: "London" },
@@ -32,19 +31,18 @@ const Table = () => {
     { name: "Daniel Thompson", age: 27, location: "Moscow" },
   ];
 
-  // Filter data based on search query
+  
   const filteredData = data.filter((entry) =>
     Object.values(entry).some((value) =>
       value.toString().toLowerCase().includes(searchQuery.toLowerCase())
     )
   );
 
-  // Function to handle changing entries per page
   const handleEntriesPerPageChange = (e) => {
     setEntriesPerPage(parseInt(e.target.value));
   };
 
-  // Function to handle search input change
+ 
   const handleSearchInputChange = (e) => {
     setSearchQuery(e.target.value);
   };

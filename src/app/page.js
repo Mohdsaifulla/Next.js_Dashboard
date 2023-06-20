@@ -6,7 +6,7 @@ import Content  from "./components/Content";
 import Chartsection from "./chartsection/page";
 import Table from "./table/page";
 import Footer from "./components/Footer";
-// import Login from "./login/page";
+
 
 export default function Home() {
   return (

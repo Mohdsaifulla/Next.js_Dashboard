@@ -9,8 +9,7 @@ function Content() {
           <div className={`${styles.tabs} ${styles.tabs1}`}>
             <div className={styles.categories}>
               <h2>Primary Card</h2>
-                <li>view detail</li>
-              
+              <li>view detail</li>
             </div>
           </div>
           <div className={`${styles.tabs} ${styles.tabs2}`}>
